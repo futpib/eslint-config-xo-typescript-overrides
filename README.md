@@ -26,6 +26,18 @@ const { curly } = foo;
 const bar = [ square ];
 ```
 
+### No camelcase in property names
+
+We still use objects as poor man's hashmaps.
+
+Correct :+1: code:
+
+```js
+const rates = {
+	eur_usd: 1,
+};
+```
+
 ## Usage
 
 Installation:
