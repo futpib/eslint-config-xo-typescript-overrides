@@ -25,3 +25,27 @@ Correct :+1: code:
 const { curly } = foo;
 const bar = [ square ];
 ```
+
+## Usage
+
+Installation:
+
+```bash
+yarn add --dev eslint-config-xo-overrides
+```
+
+or
+
+```bash
+npm install --save-dev eslint-config-xo-overrides
+```
+
+In your `package.json`:
+
+```json
+{
+  "xo": {
+    "extends": ["eslint-config-xo-overrides"]
+  }
+}
+```
