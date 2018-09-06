@@ -44,15 +44,17 @@ Installation:
 
 ```bash
 yarn add --dev eslint-config-xo-overrides
+yarn eslint-config-xo-overrides
 ```
 
 or
 
 ```bash
 npm install --save-dev eslint-config-xo-overrides
+./node_modules/.bin/eslint-config-xo-overrides
 ```
 
-In your `package.json`:
+This will install the package and add the following to your `package.json`:
 
 ```json
 {
