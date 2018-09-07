@@ -2,11 +2,10 @@
 
 const fs = require('fs');
 const path = require('path');
-
-const {name} = require(path.join(__dirname, 'package.json'));
+const {name} = require('./package.json');
 
 function main() {
-	const package_ = require('./package.json');
+	const package_ = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 	package_.xo = package_.xo || {};
 	package_.xo.extends = package_.xo.extends || [];
 	if (package_.xo.extends.includes(name)) {
