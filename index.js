@@ -7,6 +7,8 @@ module.exports = {
 			properties: 'never'
 		}],
 
-		'comma-dangle': ['error', 'always-multiline']
+		'comma-dangle': ['error', 'always-multiline'],
+
+		'unicorn/custom-error-definition': 'off'
 	}
 };

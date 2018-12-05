@@ -38,6 +38,10 @@ const rates = {
 };
 ```
 
+### Other enabled rules
+
+- [unicorn/custom-error-definition](https://github.com/sindresorhus/eslint-plugin-unicorn/docs/rules/custom-error-definition.md) - Enforce correct `Error` subclassing.
+
 ## Usage
 
 Installation:
