@@ -38,6 +38,18 @@ const rates = {
 };
 ```
 
+### Linebreak before the operator
+
+IMO reads better. Also makes diffs simpler.
+
+Correct :+1: code:
+
+```js
+return user.email
+	|| user.phone
+	|| user.slug;
+```
+
 ### Other enabled rules
 
 - [unicorn/custom-error-definition](https://github.com/sindresorhus/eslint-plugin-unicorn/tree/master/docs/rules/custom-error-definition.md) - Enforce correct `Error` subclassing.

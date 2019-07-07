@@ -8,6 +8,7 @@ module.exports = {
 		}],
 
 		'comma-dangle': ['error', 'always-multiline'],
+		'operator-linebreak': ['error', 'before'],
 
 		'unicorn/custom-error-definition': 'off'
 	}
