@@ -10,6 +10,7 @@ function main() {
 	if (package_.xo.extends.includes(name)) {
 		return;
 	}
+
 	package_.xo.extends.push(name);
 	const str = JSON.stringify(package_, null, 2) + '\n';
 	fs.writeFileSync('./package.json', str, 'utf8');
