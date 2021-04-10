@@ -10,6 +10,7 @@ module.exports = {
 		'comma-dangle': ['error', 'always-multiline'],
 		'operator-linebreak': ['error', 'before'],
 
-		'unicorn/custom-error-definition': 'off'
+		'unicorn/custom-error-definition': 'off',
+		'unicorn/no-array-reduce': 'off'
 	}
 };
