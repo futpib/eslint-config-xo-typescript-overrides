@@ -10,7 +10,7 @@ This makes diffs simpler.
 Correct :+1: code:
 
 ```js
-const f fizz = {
+const fizz = {
   blep: 'bloop',
 };
 ```
