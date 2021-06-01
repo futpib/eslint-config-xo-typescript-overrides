@@ -1,16 +1,19 @@
+/* eslint sort-keys: ["error", "asc", {"caseSensitive": false}] */
+
 module.exports = {
 	rules: {
-		'array-bracket-spacing': ['error', 'always'],
-		'object-curly-spacing': ['error', 'always'],
+		'array-bracket-spacing': [ 'error', 'always' ],
 
-		camelcase: ['error', {
-			properties: 'never'
-		}],
+		camelcase: [ 'error', {
+			properties: 'never',
+		} ],
 
-		'comma-dangle': ['error', 'always-multiline'],
-		'operator-linebreak': ['error', 'before'],
+		'comma-dangle': [ 'error', 'always-multiline' ],
+		'object-curly-spacing': [ 'error', 'always' ],
+		'operator-linebreak': [ 'error', 'before' ],
 
 		'unicorn/custom-error-definition': 'off',
-		'unicorn/no-array-reduce': 'off'
-	}
+		'unicorn/no-array-reduce': 'off',
+		'unicorn/prefer-module': 'off',
+	},
 };

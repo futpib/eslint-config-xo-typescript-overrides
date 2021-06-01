@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
-const {name} = require('./package.json');
+const { name } = require('./package.json');
 
 function main() {
 	const package_ = JSON.parse(fs.readFileSync('./package.json', 'utf8'));

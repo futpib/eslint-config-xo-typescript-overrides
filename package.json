@@ -8,7 +8,10 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "xo": "^0.39.0"
+    "xo": "^0.40.1"
+  },
+  "xo": {
+    "extends": "."
   },
   "scripts": {
     "test": "xo"
