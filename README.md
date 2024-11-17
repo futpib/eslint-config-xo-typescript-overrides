@@ -1,4 +1,4 @@
-# eslint-config-xo-overrides
+# eslint-config-xo-typescript-overrides
 eslint+xo sharable config with some opinionated rule overrides
 
 ## Overrides
@@ -59,15 +59,15 @@ return user.email
 Installation:
 
 ```bash
-yarn add --dev eslint-config-xo-overrides
-yarn eslint-config-xo-overrides
+yarn add --dev eslint-config-xo-typescript-overrides
+yarn eslint-config-xo-typescript-overrides
 ```
 
 or
 
 ```bash
-npm install --save-dev eslint-config-xo-overrides
-./node_modules/.bin/eslint-config-xo-overrides
+npm install --save-dev eslint-config-xo-typescript-overrides
+./node_modules/.bin/eslint-config-xo-typescript-overrides
 ```
 
 This will install the package and add the following to your `package.json`:
@@ -75,7 +75,7 @@ This will install the package and add the following to your `package.json`:
 ```json
 {
   "xo": {
-    "extends": ["eslint-config-xo-overrides"]
+    "extends": ["eslint-config-xo-typescript-overrides"]
   }
 }
 ```
