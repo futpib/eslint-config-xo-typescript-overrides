@@ -1170,7 +1170,7 @@ __metadata:
     eslint-config-xo-overrides: "npm:^1.6.0"
     xo: "npm:^0.59.3"
   bin:
-    eslint-config-xo-typescript-overrides: ./cli.js
+    eslint-config-xo-typescript-overrides: cli.js
   languageName: unknown
   linkType: soft
 
