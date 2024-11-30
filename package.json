@@ -10,7 +10,6 @@
   "author": "futpib <futpib@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint-config-xo-overrides": "^1.6.0",
     "xo": "^0.59.3"
   },
   "xo": {
@@ -20,5 +19,8 @@
     "test": "xo"
   },
   "bin": "cli.js",
-  "packageManager": "yarn@4.5.1"
+  "packageManager": "yarn@4.5.1",
+  "dependencies": {
+    "eslint-config-xo-overrides": "^1.6.0"
+  }
 }
