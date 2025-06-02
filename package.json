@@ -20,8 +20,5 @@
   "packageManager": "yarn@4.9.1",
   "dependencies": {
     "eslint-config-xo-overrides": "^2.1.0"
-  },
-  "resolutions": {
-    "eslint-config-xo-overrides": "portal:/home/futpib/code/eslint-config-xo-overrides"
   }
 }

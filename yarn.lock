@@ -1650,13 +1650,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-overrides@portal:/home/futpib/code/eslint-config-xo-overrides::locator=eslint-config-xo-typescript-overrides%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-xo-overrides@portal:/home/futpib/code/eslint-config-xo-overrides::locator=eslint-config-xo-typescript-overrides%40workspace%3A."
+"eslint-config-xo-overrides@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "eslint-config-xo-overrides@npm:2.1.0"
   bin:
-    eslint-config-xo-overrides: ./cli.js
+    eslint-config-xo-overrides: cli.js
+  checksum: 10c0/1d2beb6e8b5f2d316832c25d284f9796f381f7f674a0c7322159f85390c704f2191709cf0e9fba26549c1cd1eeaa5337588f4c78ca848211a55db95804e4fe4c
   languageName: node
-  linkType: soft
+  linkType: hard
 
 "eslint-config-xo-react@npm:^0.28.0":
   version: 0.28.0
