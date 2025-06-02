@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xo-typescript-overrides",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "eslint+xo sharable config with some opinionated rule overrides",
   "main": "index.js",
   "repository": {
