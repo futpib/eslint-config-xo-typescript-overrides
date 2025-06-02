@@ -14,7 +14,9 @@
     "xo": "^1.0.5"
   },
   "scripts": {
-    "test": "xo"
+    "test": "xo",
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "bin": "cli.js",
   "packageManager": "yarn@4.9.1",

@@ -1,8 +1,8 @@
 /* eslint sort-keys: ["error", "asc", {"caseSensitive": false}] */
 
-const baseConfig = require('eslint-config-xo-overrides');
+import baseConfig from 'eslint-config-xo-overrides';
 
-module.exports = [
+const config = [
 	...baseConfig,
 	{
 		rules: {
@@ -10,4 +10,6 @@ module.exports = [
 			'@stylistic/object-curly-spacing': [ 'error', 'always' ],
 		},
 	},
-];
+] as const;
+
+export default config;
