@@ -4,19 +4,19 @@ const fs = require('node:fs');
 const path = require('node:path');
 const process = require('node:process');
 
-const configContent = `const tsOverrides = require('eslint-config-xo-typescript-overrides');
+const configContent = `import tsOverrides from 'eslint-config-xo-typescript-overrides';
 
-module.exports = [
+export default [
 	...tsOverrides,
 ];
 `;
 
 function main() {
-	const xoConfigPath = path.join(process.cwd(), 'xo.config.js');
+	const xoConfigPath = path.join(process.cwd(), 'xo.config.ts');
 
-	// Check if xo.config.js already exists
+	// Check if xo.config.ts already exists
 	if (fs.existsSync(xoConfigPath)) {
-		console.error('Error: xo.config.js already exists');
+		console.error('Error: xo.config.ts already exists');
 		process.exit(1);
 	}
 
@@ -24,18 +24,18 @@ function main() {
 	try {
 		const packageJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 		if (packageJson.xo && (packageJson.xo.extends || packageJson.xo.rules)) {
-			console.warn('Warning: Found legacy XO configuration in package.json. Consider migrating to xo.config.js');
+			console.warn('Warning: Found legacy XO configuration in package.json. Consider migrating to xo.config.ts');
 		}
 	} catch {
 		// Package.json might not exist or be invalid
 	}
 
-	// Write xo.config.js
+	// Write xo.config.ts
 	try {
 		fs.writeFileSync(xoConfigPath, configContent, 'utf8');
-		console.log('Created xo.config.js');
+		console.log('Created xo.config.ts');
 	} catch (error) {
-		console.error('Error creating xo.config.js:', error.message);
+		console.error('Error creating xo.config.ts:', error.message);
 		process.exit(1);
 	}
 }

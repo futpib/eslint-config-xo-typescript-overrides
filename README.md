@@ -72,12 +72,12 @@ npm install --save-dev eslint-config-xo-typescript-overrides
 ./node_modules/.bin/eslint-config-xo-typescript-overrides
 ```
 
-This will install the package and create an `xo.config.js` file in your project root:
+This will install the package and create an `xo.config.ts` file in your project root:
 
-```js
-const tsOverrides = require('eslint-config-xo-typescript-overrides');
+```ts
+import tsOverrides from 'eslint-config-xo-typescript-overrides';
 
-module.exports = [
+export default [
 	...tsOverrides,
 ];
 ```
@@ -88,12 +88,12 @@ If you prefer to configure manually:
 
 #### For XO
 
-Create an `xo.config.js` file:
+Create an `xo.config.ts` file:
 
-```js
-const tsOverrides = require('eslint-config-xo-typescript-overrides');
+```ts
+import tsOverrides from 'eslint-config-xo-typescript-overrides';
 
-module.exports = [
+export default [
 	...tsOverrides,
 	// Your additional configurations
 ];
