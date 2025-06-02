@@ -1,6 +1,8 @@
 # eslint-config-xo-typescript-overrides
 eslint+xo sharable config with some opinionated rule overrides
 
+> **Note:** Version 2.0.0+ uses ESLint's flat config format. For the legacy ESLint config format, use version 1.x.
+
 ## Overrides
 
 ### Trailing commas in multiline objects and arrays
@@ -70,12 +72,42 @@ npm install --save-dev eslint-config-xo-typescript-overrides
 ./node_modules/.bin/eslint-config-xo-typescript-overrides
 ```
 
-This will install the package and add the following to your `package.json`:
+This will install the package and create an `xo.config.js` file in your project root:
 
-```json
-{
-  "xo": {
-    "extends": ["eslint-config-xo-typescript-overrides"]
-  }
-}
+```js
+const tsOverrides = require('eslint-config-xo-typescript-overrides');
+
+module.exports = [
+	...tsOverrides,
+];
+```
+
+### Manual Configuration
+
+If you prefer to configure manually:
+
+#### For XO
+
+Create an `xo.config.js` file:
+
+```js
+const tsOverrides = require('eslint-config-xo-typescript-overrides');
+
+module.exports = [
+	...tsOverrides,
+	// Your additional configurations
+];
+```
+
+#### For ESLint Flat Config
+
+In your `eslint.config.js`:
+
+```js
+const tsOverrides = require('eslint-config-xo-typescript-overrides');
+
+module.exports = [
+	...tsOverrides,
+	// Your additional configurations
+];
 ```

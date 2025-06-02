@@ -10,17 +10,18 @@
   "author": "futpib <futpib@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "xo": "^0.59.3"
-  },
-  "xo": {
-    "extends": "."
+    "typescript": "^5.8.3",
+    "xo": "^1.0.5"
   },
   "scripts": {
     "test": "xo"
   },
   "bin": "cli.js",
-  "packageManager": "yarn@4.5.1",
+  "packageManager": "yarn@4.9.1",
   "dependencies": {
-    "eslint-config-xo-overrides": "^1.6.0"
+    "eslint-config-xo-overrides": "^2.1.0"
+  },
+  "resolutions": {
+    "eslint-config-xo-overrides": "portal:/home/futpib/code/eslint-config-xo-overrides"
   }
 }
