@@ -11,7 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.8.3",
-    "xo": "^1.0.5"
+    "xo": "^1.2.1"
   },
   "scripts": {
     "test": "xo",
