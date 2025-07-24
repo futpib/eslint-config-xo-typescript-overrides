@@ -1388,12 +1388,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-overrides@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "eslint-config-xo-overrides@npm:2.1.0"
+"eslint-config-xo-overrides@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "eslint-config-xo-overrides@npm:2.1.1"
   bin:
     eslint-config-xo-overrides: cli.js
-  checksum: 10c0/1d2beb6e8b5f2d316832c25d284f9796f381f7f674a0c7322159f85390c704f2191709cf0e9fba26549c1cd1eeaa5337588f4c78ca848211a55db95804e4fe4c
+  checksum: 10c0/798db4d26e66213e637e4aa6ade46ba63592016b353edf3e2a7f9806ff6f4c1653a70ad18eaca80e4c70537dc299718169cb1f23b2f9bf2e04f30328466dc284
   languageName: node
   linkType: hard
 
@@ -1413,7 +1413,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-xo-typescript-overrides@workspace:."
   dependencies:
-    eslint-config-xo-overrides: "npm:^2.1.0"
+    eslint-config-xo-overrides: "npm:^2.1.1"
     typescript: "npm:^5.8.3"
     xo: "npm:^1.2.1"
   bin:

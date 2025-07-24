@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xo-typescript-overrides",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "eslint+xo sharable config with some opinionated rule overrides",
   "main": "index.js",
   "repository": {
@@ -21,6 +21,6 @@
   "bin": "cli.js",
   "packageManager": "yarn@4.9.1",
   "dependencies": {
-    "eslint-config-xo-overrides": "^2.1.0"
+    "eslint-config-xo-overrides": "^2.1.1"
   }
 }
